@@ -1,11 +1,10 @@
 (define-non-fungible-token developer-nft uint)
 
 (define-map registry 
- (
-  (id uint)) 
- ( 
-  (name (string-ascii 30)) 
-  (url (string-ascii 250))))
+   uint
+   (tuple 
+      (name (string-ascii 30))
+      (url (string-ascii 250))))
 
 (define-map lookup
  (
